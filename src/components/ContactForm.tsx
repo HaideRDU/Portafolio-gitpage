@@ -24,12 +24,6 @@ export function ContactForm() {
 
   const contactInfo = [
     {
-      icon: Phone,
-      label: 'Teléfono',
-      value: '+57 317 284 0034',
-      href: 'tel:+573172840034',
-    },
-    {
       icon: Mail,
       label: 'Email',
       value: 'rochahaider2@gmail.com',

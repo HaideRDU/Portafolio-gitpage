@@ -69,7 +69,7 @@ export function AboutSection() {
 
         <div className="space-y-4">
           <h4 className="text-foreground">Conéctate conmigo</h4>
-          <div className="flex flex-wrap gap-4">
+          <div className="flex flex-wrap gap-8">
             {socialLinks.map((link) => (
               <a
                 key={link.label}

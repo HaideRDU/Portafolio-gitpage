@@ -17,19 +17,18 @@ const education = [
       { name: 'Proyectos académicos', link: '#projects' },
     ],
     gallery: [
-      'https://images.unsplash.com/photo-1706885452328-1ddaf64fe0be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzYxMDEyMTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
-      'https://images.unsplash.com/photo-1520509414578-d9cbf09933a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml0eSUyMGdhbWUlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NjEwNDUxMTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
-    ],
+      //'https://images.unsplash.com/photo-1706885452328-1ddaf64fe0be?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzJTIwYnVpbGRpbmd8ZW58MXx8fHwxNzYxMDEyMTgwfDA&ixlib=rb-4.1.0&q=80&w=1080',
+     // 'https://images.unsplash.com/photo-1520509414578-d9cbf09933a1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHx1bml0eSUyMGdhbWUlMjBkZXZlbG9wbWVudHxlbnwxfHx8fDE3NjEwNDUxMTh8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    ],        
   },
   {
     degree: 'Unity Developer Bootcamp',
     institution: 'Generation Colombia',
     period: '2023',
     description: 'Bootcamp intensivo especializado en desarrollo de videojuegos con Unity.',
-    image: 'https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBib290Y2FtcCUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NjEwNjUxMjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
+    image: 'https://colombia.generation.org/wp-content/uploads/2021/09/Generation_Colombia_logo_NEW-BLUE.svg',
     projects: [
-      { name: 'Robit', link: '#projects' },
-      { name: 'Unity Certification', link: '#' },
+      { name: 'Unity Certification', link: 'https://www.linkedin.com/in/haider-rocha/overlay/1758298675031/single-media-viewer?type=DOCUMENT&profileId=ACoAADphr9oBGrw1iywphvR7DAh6o3yHxbw7kZs&lipi=urn%3Ali%3Apage%3Ad_flagship3_profile_view_base%3BnL%2Bgar2WT0yl2sbfGchRSg%3D%3D' },
     ],
     gallery: [
       'https://images.unsplash.com/photo-1646579885920-0c9a01cb7078?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w3Nzg4Nzd8MHwxfHNlYXJjaHwxfHxjb2RpbmclMjBib290Y2FtcCUyMGNsYXNzcm9vbXxlbnwxfHx8fDE3NjEwNjUxMjN8MA&ixlib=rb-4.1.0&q=80&w=1080',
@@ -58,7 +57,7 @@ export function Education() {
             />
             <div className="absolute inset-0 bg-gradient-to-t from-background via-background/50 to-transparent" />
             <div className="absolute top-4 right-4">
-              <Dialog>
+              {/* <Dialog>
                 <DialogTrigger asChild>
                   <Button
                     size="icon"
@@ -83,7 +82,7 @@ export function Education() {
                     ))}
                   </div>
                 </DialogContent>
-              </Dialog>
+              </Dialog> */}
             </div>
           </div>
 
@@ -106,7 +105,7 @@ export function Education() {
             <p className="text-foreground/70 mb-4">{edu.description}</p>
 
             <div>
-              <p className="text-foreground/60 mb-2">Proyectos relacionados:</p>
+              {/* <p className="text-foreground/60 mb-2">Proyectos relacionados:</p> */}
               <div className="flex flex-wrap gap-2">
                 {edu.projects.map((project, idx) => (
                   <a

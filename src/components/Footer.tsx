@@ -72,11 +72,7 @@ export function Footer() {
                   rochahaider2@gmail.com
                 </a>
               </li>
-              <li>
-                <a href="tel:+573172840034" className="hover:text-primary transition-colors">
-                  +57 317 284 0034
-                </a>
-              </li>
+              
             </ul>
           </div>
         </div>

@@ -152,7 +152,7 @@ export function Hero() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ duration: 0.8, delay: 0.6 }}
-            className="flex gap-4 justify-center"
+            className="flex gap-12 justify-center"
           >
             <a
               href="https://www.linkedin.com/in/haider-rocha/"
